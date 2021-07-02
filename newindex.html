@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gabriel Sichelero - Portfolio Website</title>
+    <link rel="icon" href="src/images/output-onlinepngtools.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans&family=Orelega+One&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        body{
+            font-family: 'Noto Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .navbar-custom{
+            background-color: white;
+        }
+
+        .navbar-brand{
+            font-size: x-large;
+            color: #F75B66;
+        }
+        :hover.navbar-brand{
+            color: #FD7F8F;
+        }
+
+        .nav-link{
+            font-size: x-large;
+            color: #253238;
+        }
+        :hover.nav-link{
+            color: #FD7F8F;
+        }
+        .active > a:focus {
+            color: #253238;
+        }
+        .active > a:focus:hover{
+            color: #FD7F8F;
+        }
+
+        .navbar-toggler:focus,
+        .navbar-toggler:active,
+        .navbar-toggler-icon:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        .custom-toggler .navbar-toggler-icon {
+            background-image: url(
+                "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(253, 127, 143)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"
+                );
+        }
+
+        .cards{
+            padding: 0 5px 0 5px;
+        }
+        .card{
+            color: #253238;
+            
+        }
+        .card-title:hover{
+            color: #FD7F8F;
+        }
+        .card-img-top {
+            width: 100%;
+            height: 40vh;
+            object-fit: cover;
+        }
+
+        .containernew{
+            position: relative;
+            height: 40vh;
+        }
+        .containernew > .btn{
+            position:absolute;
+            bottom:2px;
+            right:2px;
+            background-color: #FD7F8F;
+            color: #253238;
+            }
+        .containernew .btn:hover{
+            background-color: #253238;
+            color: #FD7F8F;
+        }
+        .link{
+            text-decoration: none;
+            color: #253238;
+        }
+        
+        .carousel{
+            margin: 0 0 5vh 0;
+        }
+        div.new_html_code {
+            width:100%;
+            height:85vmin;
+            background-image: url("src/images/imgonline-com-ua-ReplaceColor-e5GyzsCCvU.png");
+            overflow:hidden;
+            position: relative;
+        }
+        .titlejob{
+            position: absolute; 
+            top: 10%;
+            left: 8%;
+            height: 30%;
+            width: 100vh;
+            /* max-height: 16vw; */
+            max-width: 57vw;
+        }
+        .descriptionjob{
+            position: absolute; 
+            top: 42%;
+            left: 8%;
+            height: 40%;
+            width: 85vw;
+        }
+        .descriptionjob > p{
+            line-height: 200%;
+        }
+        .tecnologiesjob{
+            position: absolute; 
+            top: 75%;
+            left: 8%;
+            height: 18%;
+            width: 85vw;
+        }
+        .carousellogo{
+            position: absolute; 
+            top: 10%;
+            right: 4%;
+            height: 25vh;
+            width: 50vh;
+            max-height: 16vw;
+            max-width: 32vw;
+        }
+
+        .footer-button{
+            background-color: #253238;
+            color: #FD7F8F;
+            border-style: none;
+        }
+        .footer-button:hover{
+            background-color: #FD7F8F;
+            color: #253238;
+            border-style: none;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+      <nav class="navbar navbar-custom navbar-expand-md sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand abs" href="#home">Gabriel Sichelero</a>
+            <button class="navbar-toggler ms-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapseNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#projects">Projetos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#academics">Acadêmico</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#work">Profissional</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://gsichelero.github.io/Web-Design-Resume/" target="_blank">Currículo
+                            <img src="src/images/file-earmark-person.svg" alt="" width="30" height="24">
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://www.linkedin.com/in/gabriel-sichelero/" target="_blank">LinkedIn
+                            <img src="src/images/linkedin.svg" alt="" width="30" height="24">
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://github.com/GSichelero" target="_blank">GitHub
+                            <img src="src/images/github.svg" alt="" width="30" height="24">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+        <div class="col-lg-12 p-lg-5" id="home" style="background-image: url('src/images/pinkred.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+            <h2 class="display-4 fw-normal text-center" style="color: white; padding-top: 1rem;"><b>Seja bem-vindo</b></h2>
+            <p class="display-6 fw-normal text-center" style="color: white; padding-bottom: 4rem;">
+                <br>Me chamo <b>Gabriel Sichelero</b>,
+                sou <b>Desenvolvedor de Software</b>
+                e estudante de <b>Sistemas para Internet</b>
+        </div>
+
+        <h2 class="display-4 fw-normal text-center" id="projects" style="color: #253238; margin: 4vh 0 2vh 0;"><b>Projetos</b></h2>
+        
+        <div class="row row-cols-1 row-cols-md-3 g-4 cards">
+            <div class="col">
+              <div class="card h-100">
+                <div class="containernew">
+                    <img src="src/images/harvard-cs50.jpeg" class="card-img-top" alt="...">
+                    <button type="button" class="btn" onclick="window.open('https://github.com/GSichelero/Harvard-CS50','_blank');" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                        </svg>
+                        <b>GitHub</b>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <a class="link" target="_blank" href="https://github.com/GSichelero/Harvard-CS50">
+                        <h5 class="card-title"><b>Projetos desenvolvidos durante o curso online "CS50"</b></h5>
+                    </a>
+                  <p class="card-text"></p>
+                    <img src="src/images/c-program.svg" alt="" height="30">
+                    <img src="src/images/python-5.svg" alt="" height="30">
+                    <img src="src/images/sql-file-format-symbol-svgrepo-com.svg" alt="" height="30">
+                    <img src="src/images/sqlite.svg" alt="" height="30">
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                  <div class="containernew">
+                      <img src="src/images/houses.jpg" class="card-img-top" alt="...">
+                      <button type="button" class="btn" onclick="window.open('https://github.com/GSichelero/House_Prices','_blank');" >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                          </svg>
+                          <b>GitHub</b>
+                      </button>
+                  </div>
+                  <div class="card-body">
+                      <a class="link" target="_blank" href="https://github.com/GSichelero/House_Prices">
+                          <h5 class="card-title"><b>House Prices - Advanced Regression Techniques (Kaggle Competition)</b></h5>
+                      </a>
+                    <p class="card-text"></p>
+                      <img src="src/images/python-5.svg" alt="" height="30">
+                      <img src="src/images/Scikit_learn_logo_small.svg" alt="" height="30">
+                      <img src="src/images/kaggle-ar21.svg" alt="" height="30">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="containernew">
+                      <img src="src/images/aerospacenews.jpg" class="card-img-top" alt="...">
+                      <button type="button" class="btn" onclick="window.open('https://github.com/GSichelero/nlp_news','_blank');" >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                          </svg>
+                          <b>GitHub</b>
+                      </button>
+                  </div>
+                  <div class="card-body">
+                      <a class="link" target="_blank" href="https://github.com/GSichelero/nlp_news">
+                          <h5 class="card-title"><b>Modelo classificatório de notícias em linhas de negócio (NLP)</b></h5>
+                      </a>
+                    <p class="card-text"></p>
+                      <img src="src/images/python-5.svg" alt="" height="30">
+                      <img src="src/images/Scikit_learn_logo_small.svg" alt="" height="30">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="containernew">
+                      <img src="src/images/cs50ai.png" class="card-img-top" alt="...">
+                      <button type="button" class="btn" onclick="window.open('https://github.com/GSichelero/CS50_AI','_blank');" >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                          </svg>
+                          <b>GitHub</b>
+                      </button>
+                  </div>
+                  <div class="card-body">
+                      <a class="link" target="_blank" href="https://github.com/GSichelero/CS50_AI">
+                          <h5 class="card-title"><b>"CS50's Introduction to Artificial Intelligence"</b></h5>
+                      </a>
+                    <p class="card-text"></p>
+                      <img src="src/images/python-5.svg" alt="" height="30">
+                      <img src="src/images/Scikit_learn_logo_small.svg" alt="" height="30">
+                      <img src="src/images/OpenCV_Logo_with_text_svg_version.svg" alt="" height="30">
+                      <img src="src/images/image2vector.svg" alt="" height="30">
+                      <img src="src/images/tensorflow-ar21.svg" alt="" height="30">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="containernew">
+                      <img src="src/images/cs50mobile.jpg" class="card-img-top" alt="...">
+                      <button type="button" class="btn" onclick="window.open('https://github.com/GSichelero/CS50_Mobile','_blank');" >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                          </svg>
+                          <b>GitHub</b>
+                      </button>
+                  </div>
+                  <div class="card-body">
+                      <a class="link" target="_blank" href="https://github.com/GSichelero/CS50_Mobile">
+                          <h5 class="card-title"><b>"CS50’s Mobile App Development with React Native"</b></h5>
+                      </a>
+                    <p class="card-text"></p>
+                      <img src="src/images/React-icon.svg" alt="" height="30">
+                      <img src="src/images/redux.svg" alt="" height="30">
+                      <img src="src/images/Unofficial_JavaScript_logo_2.svg" alt="" height="30">
+                      <img src="src/images/HTML5_logo_and_wordmark.svg" alt="" height="30">
+                      <img src="src/images/CSS3_logo_and_wordmark.svg" alt="" height="30">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="containernew">
+                      <img src="src/images/titanic2-0349859403-2203948..capa_widexl.jpg" class="card-img-top" alt="...">
+                      <button type="button" class="btn" onclick="window.open('https://github.com/GSichelero/titanic','_blank');" >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                          </svg>
+                          <b>GitHub</b>
+                      </button>
+                  </div>
+                  <div class="card-body">
+                      <a class="link" target="_blank" href="https://github.com/GSichelero/titanic">
+                          <h5 class="card-title"><b>Titanic - Machine Learning from Disaster (Kaggle Competition)</b></h5>
+                      </a>
+                    <p class="card-text"></p>
+                      <img src="src/images/python-5.svg" alt="" height="30">
+                      <img src="src/images/Scikit_learn_logo_small.svg" alt="" height="30">
+                      <img src="src/images/kaggle-ar21.svg" alt="" height="30">
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <h2 class="display-4 fw-normal text-center" id="work" style="color: #253238; padding: 2vh; margin-top: 4vh;"><b>Experiência Profissional</b></h2>
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="new_html_code"></div>
+                    <div class="titlejob">
+                        <h1 style="color: white; font-size: 3vmax;"><b>Desenvolvedor de Software</b></h1>
+                        <h2 style="color: white; font-size: 2.5vmax;"><b>Elint Tech<br>2020 - atualmente</b></h2>
+                        <br>
+                    </div>
+                    <div class="descriptionjob">
+                        <p style="color: white; font-size: 1.5vmax;">
+                            <b>Desenvolvimento de algoritmos para extração de dados tabulares em imagens.
+                            <br>Criação e manutenção de Banco de Dados em PostgreSQL na Nuvem.
+                            <br>Desenvolvimento de APIs com Flask.
+                            <br>Desenvolvimento de Web Scrapers com Selenium e Scrapy.
+                        </b></p>
+                    </div>
+                    <div class="tecnologiesjob">
+                        <img src="src/images/python-5.svg" alt="" height="100%">
+                        <img src="src/images/Postgresql_elephant.svg" alt="" height="100%">
+                    </div>
+                    <div class="carousellogo">
+                        <img src="src/images/elint-whole.png" alt="" style="max-width:100%;">
+                    </div>
+              </div>
+              <div class="carousel-item">
+                <div class="new_html_code"></div>
+                <div class="titlejob">
+                    <h1 style="color: white; font-size: 3vmax;"><b>Estagiário de Pesquisa em Ciência de Dados</b></h1>
+                    <h2 style="color: white; font-size: 2.5vmax;"><b>GGI - LabMat - UFSC<br>2020 - 2021</b></h2>
+                    <br>
+                </div>
+                <div class="descriptionjob">
+                    <p style="color: white; font-size: 1.5vmax;">
+                        <b>Automatização da Extração de Informações Comerciais em notícias, artigos científicos, relatórios financeiros e patentes utilizando Python.
+                        <br>Classificação por meio de algoritmos de NLP (Natural Language Processing) de dados textuais coletados.
+                    </b></p>
+                </div>
+                <div class="tecnologiesjob">
+                    <img src="src/images/python-5.svg" alt="" height="100%">
+                </div>
+                <div class="carousellogo">
+                    <img src="src/images/output-onlinepngtools (2).png" alt="" style="max-width:100%;">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <h2 class="display-4 fw-normal text-center" id="academics" style="color: #253238; padding: 2vh; margin-top: 4vh;"><b>Experiência Acadêmica</b></h2>
+
+          <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="new_html_code"></div>
+                    <div class="titlejob">
+                        <h1 style="color: white; font-size: 3vmax;"><b>Graduação em Sistemas para Internet</b></h1>
+                        <h2 style="color: white; font-size: 2.5vmax;"><b>UNIVALI<br>2021 - atualmente</b></h2>
+                        <br>
+                    </div>
+                    <div class="descriptionjob">
+                        <p style="color: white; font-size: 1.5vmax;">
+                            <b></b></p>
+                    </div>
+                    <div class="tecnologiesjob">
+                        <img src="" alt="" height="100%">
+                    </div>
+                    <div class="carousellogo">
+                        <img src="src/images/univali.png" alt="" style="max-width:100%;">
+                    </div>
+              </div>
+              <div class="carousel-item">
+                <div class="new_html_code"></div>
+                <div class="titlejob">
+                    <h1 style="color: white; font-size: 3vmax;"><b>Graduação em Engenharia Civil</b></h1>
+                    <h2 style="color: white; font-size: 2.5vmax;"><b>UFSC<br>2018 - 2020 (Incompleta)</b></h2>
+                    <br>
+                </div>
+                <div class="descriptionjob">
+                    <p style="color: white; font-size: 1.5vmax;">
+                        <b>Total de 6 semestres cursados (60% do curso).</b></p>
+                </div>
+                <div class="tecnologiesjob">
+                    <img src="" alt="" height="100%">
+                </div>
+                <div class="carousellogo">
+                    <img src="src/images/1200px-Brasao_UFSC_vertical_extenso.png" alt="" style="max-width:100%;">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="new_html_code"></div>
+                <div class="titlejob">
+                    <h1 style="color: white; font-size: 3vmax;"><b>Curso Técnico em Informática</b></h1>
+                    <h2 style="color: white; font-size: 2.5vmax;"><b>IFC<br>2015 - 2017</b></h2>
+                    <br>
+                </div>
+                <div class="descriptionjob">
+                    <p style="color: white; font-size: 1.5vmax;">
+                        <b></b></p>
+                </div>
+                <div class="tecnologiesjob">
+                    <img src="" alt="" height="100%">
+                </div>
+                <div class="carousellogo">
+                    <img src="src/images/IFSC_horizontal_marca2015_PNG.png" alt="" style="max-width:100%;">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="col-lg-12 p-3" style="background-color: #253238;">
+            <h2 class="display-7 fw-normal text-center" style="color: white;"><b>Contato</b></h2>
+            <p class="display-7 fw-normal text-center" style="color: #FD7F8F; padding-top: 6px;">gabriel.sichelero@hotmail.com</p>
+            <div class="col-md-12 text-center">
+            <button type="button" class="btn footer-button text-center" onclick="window.open('https://www.linkedin.com/in/gabriel-sichelero/','_blank');">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                </svg>
+              </button>
+            <button type="button" class="btn footer-button text-center" onclick="window.open('https://github.com/GSichelero','_blank');">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+            </button>
+            </div>
+          </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
